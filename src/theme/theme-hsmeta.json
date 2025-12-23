@@ -1,0 +1,8 @@
+{
+  "uid": "my-minimal-theme",
+  "type": "theme",
+  "config": {
+    "themePath": "my-minimal-theme",
+    "secretNames": []
+  }
+}

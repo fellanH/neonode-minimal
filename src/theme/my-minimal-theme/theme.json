@@ -1,0 +1,10 @@
+{
+  "label": "My Minimal Theme",
+  "preview_path": "templates/page.hubl.html",
+  "screenshot_path": "images/neonode-web-2.0-cover.png",
+  "version": "1.0.0",
+  "is_available_for_new_content": true,
+  "css": [
+    "css/main.css"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+   "allow_new_line": false,
+   "default": "Data to enrich your online business",
+   "display_width": null,
+   "id": "headline",
+   "label": "Headline",
+   "locked": false,
+   "name": "headline",
+   "required": false,
+   "type": "text",
+   "placeholder": "Data to enrich your online business"
+  }
+ ]

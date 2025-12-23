@@ -1,0 +1,12 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.parameterHints": true,
+    "files.associations": {
+        "*.hubl.html": "html-hubl",
+        "*.hubl.css": "css-hubl",
+        "*.hubl.js": "js-hubl"
+    },
+    "emmet.includeLanguages": {
+        "html-hubl": ".hubl.html"
+    }
+}

@@ -1,0 +1,12 @@
+<!--
+  templateType: section
+  label: Hero
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-thumbnails/hero-thumbnail.png
+  description: "Hero section"
+-->
+{{ require_css(get_asset_url("../css/main.css")) }}
+{% dnd_section%}
+      {% dnd_module path="../modules/hero" %}
+      {% end_dnd_module %}
+{% end_dnd_section %}

@@ -1,0 +1,31 @@
+{
+  "name": "my-minimal-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cms:upload": "hs cms upload src/theme/my-minimal-theme my-minimal-theme",
+    "cms:watch": "hs cms watch src/theme/my-minimal-theme my-minimal-theme",
+    "tailwind": "tailwindcss -i tailwind.css -o ./src/theme/my-minimal-theme/css/main.css",
+    "tailwind:watch": "tailwindcss -i tailwind.css -o ./src/theme/my-minimal-theme/css/main.css --watch",
+    "project:dev": "hs-cms-dev-server src/theme/my-minimal-theme",
+    "project:upload": "hs project upload",
+    "init": "hs init",
+    "dev": "concurrently \"npm run tailwind:watch\" \"npm run project:dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@hubspot/cli": "^7.11.1",
+    "@hubspot/cms-dev-server": "latest",
+    "@tailwindcss/cli": "^4.1.18",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11",
+    "tailwindcss": "^4.1.18"
+  }
+}

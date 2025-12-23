@@ -1,0 +1,94 @@
+[
+  {
+    "name": "nav_items",
+    "label": "Navigation Items",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "sorting_label_field": "item_label",
+      "default": 1
+    },
+    "children": [
+      {
+        "name": "item_label",
+        "label": "Label",
+        "type": "text",
+        "required": true,
+        "default": "Menu Item"
+      },
+      {
+        "name": "link",
+        "label": "Link",
+        "type": "link"
+      },
+      {
+        "name": "mega_menu_columns",
+        "label": "Mega Menu Columns",
+        "type": "group",
+        "occurrence": {
+          "min": 0,
+          "max": 4,
+          "sorting_label_field": "title",
+          "default": 0
+        },
+        "children": [
+          {
+            "name": "title",
+            "label": "Column Title",
+            "type": "text"
+          },
+          {
+            "name": "subtitle",
+            "label": "Subtitle",
+            "type": "text"
+          },
+          {
+            "name": "column_items",
+            "label": "Column Items",
+            "type": "group",
+            "occurrence": {
+              "min": 0,
+              "max": null,
+              "sorting_label_field": "item_label",
+              "default": 0
+            },
+            "children": [
+              {
+                "name": "item_label",
+                "label": "Label",
+                "type": "text",
+                "required": true,
+                "default": "Link Label"
+              },
+              {
+                "name": "link",
+                "label": "Link",
+                "type": "link"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Background image",
+    "name": "background_image",
+    "type": "image",
+    "default": {
+      "src": "https://cdn.prod.website-files.com/694915f30234c0eb46ac4741/694916653ce02fb8a6a21814_gemma3.webp",
+      "alt": "Background image",
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  {
+    "name": "always_show_background",
+    "label": "Always Show Background",
+    "type": "boolean",
+    "default": false
+  }
+]
+
+
