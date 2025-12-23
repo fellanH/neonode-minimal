@@ -1,1 +1,6 @@
 @import "tailwindcss";
+/* Tailwind v4 CLI docs: https://tailwindcss.com/docs/installation/tailwind-cli */
+
+@theme {
+  /* Theme overrides go here */
+}

@@ -1,0 +1,45 @@
+# Working with Tailwind CSS v4
+
+Tailwind v4 is CSS-native. No tailwind.config.js. The root tailwind.css drives everything.
+
+First line in tailwind.css: @import "tailwindcss";
+This injects Preflight reset, theme variables, and the engine that emits only classes you use.
+
+Preflight changes to know
+- Headings lose default margins and sizes; add classes like text-3xl font-bold.
+- Lists lose bullets and indent; add list-disc ml-4.
+- Box sizing becomes border-box. Images are block and max-width: 100%.
+
+HubSpot specifics
+- The Page Editor injects its own CSS; always check the live preview.
+- The reset affects legacy modules; add explicit utilities so they stay correct.
+- CSS order: Base reset, then your custom CSS, then utilities that win last.
+
+How it works
+- Source: tailwind.css. Output: src/theme/my-minimal-theme/css/main.css.
+- Scanner keeps only classes used in your HubL, HTML, or JS.
+
+Customizing
+- Use an @theme block in tailwind.css for variables such as colors, fonts, spacing.
+- Example: --color-brand-primary, --font-sans, --spacing-128.
+- These become normal CSS variables like var(--color-brand-primary).
+
+Dev loop
+- Keep npm run dev running.
+- Edit HubL and add classes (bg-brand-primary text-white); main.css updates automatically.
+- See changes on localhost:3000
+
+Rules to keep things healthy
+- Do not edit src/.../css/main.css directly; change the @theme block instead.
+- Do not add tailwind.config.js.
+- Keep npm run dev running while coding.
+- Use utility classes instead of inline style blocks.
+
+Why Tailwind here
+- Ships only used CSS for performance.
+- Consistent spacing and colors through utilities.
+- Modern local dev workflow for HubSpot.
+
+Resources
+- Tailwind CSS v4 docs: https://tailwindcss.com/docs/v4-beta
+- Installation guide: https://tailwindcss.com/docs/installation/tailwind-cli

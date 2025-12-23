@@ -4,9 +4,11 @@
     "files.associations": {
         "*.hubl.html": "html-hubl",
         "*.hubl.css": "css-hubl",
-        "*.hubl.js": "js-hubl"
+        "*.hubl.js": "js-hubl",
+        "*.html": "html-hubl",
+        "*.css": "css-hubl"
     },
     "emmet.includeLanguages": {
-        "html-hubl": ".hubl.html"
+        "html-hubl": "html"
     }
 }

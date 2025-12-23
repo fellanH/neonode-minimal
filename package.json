@@ -10,7 +10,7 @@
     "tailwind:watch": "tailwindcss -i tailwind.css -o ./src/theme/my-minimal-theme/css/main.css --watch",
     "project:dev": "hs-cms-dev-server src/theme/my-minimal-theme",
     "project:upload": "hs project upload",
-    "init": "hs init",
+    "init": "hs account auth",
     "dev": "concurrently \"npm run tailwind:watch\" \"npm run project:dev\""
   },
   "keywords": [],
